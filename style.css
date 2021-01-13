@@ -62,13 +62,50 @@ header h1 img {
   width:39px;
 }
 
-#container {
-  padding:100px;
+#container .box img{
+  width: 100%;
+  padding: 0;
 }
+
+#container .text-1 {
+  padding-top: 40px;
+  padding-right: 10px;
+  padding-bottom:80px;
+  color: #3d3d3d;
+  font-size: 2.1875rem;
+  font-weight: 300;
+  line-height: 1.56;
+  text-align: center;
+}
+
+#container2 .box-list {
+  display: flex;
+
+}
+
+#container2 img {
+  width: 100%;
+}
+
+#container2 .box-list li {
+  width: 33.33%;
+  padding: 10px;
+}
+#container2 .text-con .title-1 {
+  font-size: 22px;
+  padding: 45px 30px 26px 30px;
+}
+#container2 p {
+  font-size: 14px;
+  line-height: 17pt;
+  padding: 0 30px 26px 30px;
+}
+
 
 /* footer */
 footer {
   margin-top:50px;
+  background-color: #f1efeb;
 }
 footer .foot-list {
   display:flex;
@@ -85,7 +122,6 @@ footer .tit {
   color:#333;
   font-size:15px;
 }
-
 
 /* tablet */
 @media screen and (min-width: 768px) and (max-width:1199px) {
