@@ -48,6 +48,11 @@ table {
 	border-spacing: 0;
 }
 
+::selection {
+  color:#fff;
+  background-color:red;
+}
+
 /* layout */
 body {
   background-color:#f6f4f1;
@@ -58,6 +63,7 @@ body {
 }
 
 header {
+  position: relative;
   height:176px;
   padding-top:51px;
 }
@@ -67,7 +73,37 @@ header h1 {
 header h1 img {
   width:39px;
 }
+header .menu {
+  display:block;
+  position:absolute;
+  top:50px;
+  left:20px;
+  width:26px;
+  height:26px;
+}
+header .menu span {
+  position:relative;
+  display:block;
+  width:100%;
+  height:3px;
+  background-color:#000;
+}
+header .menu span:before,
+header .menu span:after {
+  content:'';
+  position:absolute;
+  top:10px;
+  left:0;
+  display:block;
+  width:100%;
+  height:3px;
+  background-color:#000;
+}
+header .menu span:after {
+  top:20px;
+}
 
+<<<<<<< HEAD
 header .menu {
   display: block;
   position: absolute;
@@ -186,20 +222,37 @@ button {
   font-weight: 300;
   line-height: 1.71;
   padding: 0 30px 26px 51px;
+=======
+/* container */
+#container {
+  padding:0;
+  overflow: hidden;
+>>>>>>> dfba0301ee39848525bbc63a5268628e8076952c
 }
 
 /* footer */
 footer {
   margin-top:50px;
+<<<<<<< HEAD
   background-color: #f1efeb;
+=======
+  background-color:#f1efeb;
+>>>>>>> dfba0301ee39848525bbc63a5268628e8076952c
 }
 footer .foot-list {
   display:flex;
 }
+<<<<<<< HEAD
 footer .foot-list li {
   width:21%;
   padding:10px;
   border-right: solid 1px #e0e0e0;
+=======
+footer .foot-list > li {
+  width:20%;
+  padding:30px 15px;
+  border-left:1px solid #dddbd8;
+>>>>>>> dfba0301ee39848525bbc63a5268628e8076952c
 }
 footer .foot-list li:first-child {
   flex:1;
@@ -224,6 +277,7 @@ footer .sns p {
    font-size:20px;
    line-height: 1.5;
 }
+<<<<<<< HEAD
 
 /* tablet */
 @media screen and (min-width: 768px) and (max-width:1199px) {
@@ -338,10 +392,95 @@ footer .sns p {
    font-size:20px;
    line-height: 1.5;
 }  
+=======
+footer .info > span {
+  display:block;
+  font-size: 14px;
+  line-height:1.5;
+}
+footer .list-1 li {
+  font-size: 14px;
+  line-height:1.5;
+}
+footer .list-1 li a,
+footer .sns a {
+  color:#333;
+  text-decoration: none;
+}
+
+/* main */
+.visual-box {
+  text-align:center;
+}
+.visual-box img {
+  width:100%;
+}
+.visual-box .text {
+  padding:50px 0 0 0;
+  color:#3d3d3d;
+  font-size:30px;
+}
+
+.main-list {
+  display:flex;
+  margin:150px -11px 0;
+}
+.main-list li {
+  width:33.33333%;
+  padding:0 11px 30px 11px;
+}
+.main-list li .image img {
+  width:100%;
+}
+.main-list li .text-box {
+  padding:20px 10px 0 20px;
+}
+.main-list li .text-box .title {
+  color:#333;
+  font-size:20px;
+}
+.main-list li .text-box .text,
+.main-list li .text-box .more {
+  margin-top:10px;
+  font-size:14px;
+  line-height: 1.5;
+}
+.main-list li .text-box .more {
+  text-decoration: underline;
+}
+
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width:1199px) {
+  /* main */
+  .visual-box .text {
+    padding:30px 0 0 0;
+    font-size:24px;
+  }
+  .main-list {
+    flex-wrap:wrap;
+    margin:80px -11px 0;
+  }
+  .main-list li {
+    width:50%;
+  }
+  .main-list li .text-box {
+    padding:15px 5px 0 15px;
+  }
+  .main-list li .text-box .title {
+    font-size:16px;
+  }
+  .main-list li .text-box .text,
+  .main-list li .text-box .more {
+    margin-top:6px;
+    font-size:12px;
+  }
+>>>>>>> dfba0301ee39848525bbc63a5268628e8076952c
 }
 
 /* mobile */
 @media screen and (max-width: 767px) {
+<<<<<<< HEAD
   #container .box img{
     width: 100%;
     padding: 0;
@@ -447,3 +586,31 @@ footer .sns p {
      line-height: 1.5;
   }  
 }
+=======
+  /* main */
+  .visual-box .text {
+    padding:15px 0 0 0;
+    font-size:16px;
+  }
+  .main-list {
+    flex-wrap:wrap;
+    margin:40px 0 0;
+  }
+  .main-list li {
+    width:100%;
+    padding-left:0;
+    padding-right:0;
+  }
+  .main-list li .text-box {
+    padding:10px 5px 0 10px;
+  }
+  .main-list li .text-box .title {
+    font-size:14px;
+  }
+  .main-list li .text-box .text,
+  .main-list li .text-box .more {
+    margin-top:4px;
+    font-size:11px;
+  }
+}
+>>>>>>> dfba0301ee39848525bbc63a5268628e8076952c
