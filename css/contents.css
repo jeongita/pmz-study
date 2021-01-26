@@ -7,12 +7,53 @@
   margin:0 20px;
 }
 .tab-type-1 li a {
+  position: relative;
   display:block;
   padding:0 0 5px 0;
   color:#333;
   font-size:24px;
   font-weight:500;
 }
-.tab-type-1 li a.active {
-  border-bottom:1px solid #000;
+
+.tab-type-1 li a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background-color: #000;
+  transition: all .2s ease-in-out;
+} 
+.tab-type-1 li a:active:after {
+  left:0;
+  width: 100%;
+}
+
+/* faq-list */
+.faq-list {
+  padding:100px;
+}
+.faq-list li {
+  padding:10px;
+  border-bottom:1px solid #ccc;
+}
+.faq-list li .q {
+  display:block;
+  padding:5px;
+  font-size:20px;
+}
+.faq-list li .a {
+  display:none;
+  padding:5px;
+  font-size:16px;
+  line-height:20px;
+}
+.faq-list li.active .q {
+  color:red;
+  font-weight:bold;
+}
+.faq-list li.active .a {
+  display:block;
 }
